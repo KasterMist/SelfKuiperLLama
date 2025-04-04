@@ -150,8 +150,8 @@ class Layer : public BaseLayer {
   void reset_output_size(size_t size);
 
  private:
-  std::vector<tensor::Tensor> inputs_;
-  std::vector<tensor::Tensor> outputs_;
+  std::vector<tensor::Tensor> inputs_;  // 存放输入的数组
+  std::vector<tensor::Tensor> outputs_; // 存放输出的数组
 };
 
 class LayerFp32Param : public Layer {
