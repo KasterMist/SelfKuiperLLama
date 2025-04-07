@@ -2,3 +2,4 @@ build/*
 lesson_model/*
 lib/libllama.so
 .gitignore
+.vscode
