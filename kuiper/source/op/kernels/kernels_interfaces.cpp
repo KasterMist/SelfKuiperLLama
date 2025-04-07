@@ -73,7 +73,8 @@ RoPEKernel get_rope_kernel(base::DeviceType device_type) {
 ScaleKernel get_scale_kernel(base::DeviceType device_type) {
   if (device_type == base::DeviceType::kDeviceCPU) {
     return scale_inplace_cpu;
-  } else {
+  }
+  else {
     LOG(FATAL) << "Unknown device type for get a rope kernel.";
     return nullptr;
   }
