@@ -1,0 +1,5 @@
+# .gitignore
+build/*
+lesson_model/*
+lib/libllama.so
+.vscode/*
