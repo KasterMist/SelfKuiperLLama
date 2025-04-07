@@ -74,6 +74,9 @@ ScaleKernel get_scale_kernel(base::DeviceType device_type) {
   if (device_type == base::DeviceType::kDeviceCPU) {
     return scale_inplace_cpu;
   }
+  else if(device_type == base::DeviceType::kDeviceCUDA){
+    return nullptr;
+  }
   else {
     LOG(FATAL) << "Unknown device type for get a rope kernel.";
     return nullptr;
