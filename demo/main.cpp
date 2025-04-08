@@ -55,13 +55,15 @@ int main(int argc, char* argv[]) {
   const char* checkpoint_path = argv[1];  // e.g. out/model.bin
   const char* tokenizer_path = argv[2];
 
+  // model::LLama2Model model(base::TokenizerType::kEncodeSpe, tokenizer_path,
+  //   checkpoint_path, false);
   model::LLama2Model model(base::TokenizerType::kEncodeSpe, tokenizer_path,
-    checkpoint_path, false);
+    checkpoint_path, true);
   auto init_status = model.init(base::DeviceType::kDeviceCUDA);
   if (!init_status) {
     LOG(FATAL) << "The model init failed, the error code is: " << init_status.get_err_code();
   }
-  const std::string& sentence = "hello";
+  const std::string& sentence = "hello, who are you?";
 
   auto start = std::chrono::steady_clock::now();
   printf("Generating...\n");
