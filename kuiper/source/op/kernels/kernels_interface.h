@@ -47,6 +47,8 @@ void softmax_inplace_cpu(const float* input_ptr, size_t size);
 
 AddKernel get_add_kernel(base::DeviceType device_type);
 
+AddKernel get_add_kernel_fp32x4(base::DeviceType device_type);
+
 EmbeddingKernel get_emb_kernel(base::DeviceType device_type);
 
 MatmulKernel get_matmul_kernel(base::DeviceType device_type);

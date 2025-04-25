@@ -4,5 +4,7 @@
 namespace kernel {
 void add_kernel_cu(const tensor::Tensor& input1, const tensor::Tensor& input2,
                    const tensor::Tensor& output, void* stream = nullptr);
+void add_kernel_cu_fp32x4(const tensor::Tensor& input1, const tensor::Tensor& input2,
+                    const tensor::Tensor& output, void* stream = nullptr);
 }  // namespace kernel
 #endif  // ADD_CU_H

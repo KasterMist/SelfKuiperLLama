@@ -19,7 +19,7 @@ void* CPUDeviceAllocator::allocate(size_t byte_size) const {
   const size_t alignment = (byte_size >= size_t(1024)) ? size_t(32) : size_t(16);
   int status = posix_memalign((void**)&data,
                               ((alignment >= sizeof(void*)) ? alignment : sizeof(void*)),
-                              byte_size);
+                              byte_size); // 用于分配对齐内存的函数
   if (status != 0) {
     return nullptr;
   }

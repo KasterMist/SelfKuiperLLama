@@ -1,0 +1,217 @@
+WARNING: Failure to find: /home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/x64-linux-dbg/src/corelib/qt5core_metatypes.json
+/home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/corelib/kernel/qobjectdefs.h:0: Note: No relevant classes found. No output generated.
+WARNING: Failure to find: /home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/x64-linux-dbg/src/gui/qt5gui_metatypes.json
+Failed to open /home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/header.LGPL
+Failed to open /home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/header.LGPL
+Failed to open /home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/header.LGPL
+/home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/network/access/qnetworkreplyhttpimpl.cpp: In member function ‘void QNetworkReplyHttpImplPrivate::postRequest(const QNetworkRequest&)’:
+/home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/network/access/qnetworkreplyhttpimpl.cpp:697:56: warning: ‘QNetworkRequest::FollowRedirectsAttribute’ is deprecated: Use RedirectPolicyAttribute [-Wdeprecated-declarations]
+  697 |     else if (newHttpRequest.attribute(QNetworkRequest::FollowRedirectsAttribute).toBool())
+      |                                                        ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/network/access/qnetworkreplyhttpimpl_p.h:55,
+                 from /home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/network/access/qnetworkreplyhttpimpl.cpp:42:
+/home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/network/access/qnetworkrequest.h:97:9: note: declared here
+   97 |         FollowRedirectsAttribute Q_DECL_ENUMERATOR_DEPRECATED_X("Use RedirectPolicyAttribute"),
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/network/access/qnetworkreplyhttpimpl.cpp:697:56: warning: ‘QNetworkRequest::FollowRedirectsAttribute’ is deprecated: Use RedirectPolicyAttribute [-Wdeprecated-declarations]
+  697 |     else if (newHttpRequest.attribute(QNetworkRequest::FollowRedirectsAttribute).toBool())
+      |                                                        ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/network/access/qnetworkreplyhttpimpl_p.h:55,
+                 from /home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/network/access/qnetworkreplyhttpimpl.cpp:42:
+/home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/network/access/qnetworkrequest.h:97:9: note: declared here
+   97 |         FollowRedirectsAttribute Q_DECL_ENUMERATOR_DEPRECATED_X("Use RedirectPolicyAttribute"),
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/3rdparty/md4c/md4c.c: In function ‘md_merge_lines’:
+/home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/3rdparty/md4c/md4c.c:890:73: warning: unused parameter ‘n_lines’ [-Wunused-parameter]
+  890 | md_merge_lines(MD_CTX* ctx, OFF beg, OFF end, const MD_LINE* lines, int n_lines,
+      |                                                                     ~~~~^~~~~~~
+/home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/3rdparty/md4c/md4c.c: In function ‘md_is_hex_entity_contents’:
+/home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/3rdparty/md4c/md4c.c:1235:35: warning: unused parameter ‘ctx’ [-Wunused-parameter]
+ 1235 | md_is_hex_entity_contents(MD_CTX* ctx, const CHAR* text, OFF beg, OFF max_end, OFF* p_end)
+      |                           ~~~~~~~~^~~
+/home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/3rdparty/md4c/md4c.c: In function ‘md_is_dec_entity_contents’:
+/home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/3rdparty/md4c/md4c.c:1251:35: warning: unused parameter ‘ctx’ [-Wunused-parameter]
+ 1251 | md_is_dec_entity_contents(MD_CTX* ctx, const CHAR* text, OFF beg, OFF max_end, OFF* p_end)
+      |                           ~~~~~~~~^~~
+/home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/3rdparty/md4c/md4c.c: In function ‘md_is_named_entity_contents’:
+/home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/3rdparty/md4c/md4c.c:1267:37: warning: unused parameter ‘ctx’ [-Wunused-parameter]
+ 1267 | md_is_named_entity_contents(MD_CTX* ctx, const CHAR* text, OFF beg, OFF max_end, OFF* p_end)
+      |                             ~~~~~~~~^~~
+/home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/3rdparty/md4c/md4c.c: In function ‘md_free_attribute’:
+/home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/3rdparty/md4c/md4c.c:1373:27: warning: unused parameter ‘ctx’ [-Wunused-parameter]
+ 1373 | md_free_attribute(MD_CTX* ctx, MD_ATTRIBUTE_BUILD* build)
+      |                   ~~~~~~~~^~~
+/home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/3rdparty/md4c/md4c.c: In function ‘md_link_label_cmp’:
+/home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/3rdparty/md4c/md4c.c:1590:21: warning: comparison of integer expressions of different signedness: ‘MD_OFFSET’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+ 1590 |         if(a_fi_off >= a_fi.n_codepoints) {
+      |                     ^~
+/home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/3rdparty/md4c/md4c.c:1595:21: warning: comparison of integer expressions of different signedness: ‘MD_OFFSET’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+ 1595 |         if(b_fi_off >= b_fi.n_codepoints) {
+      |                     ^~
+/home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/3rdparty/md4c/md4c.c: In function ‘md_analyze_marks’:
+/home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/3rdparty/md4c/md4c.c:3945:46: warning: unused parameter ‘lines’ [-Wunused-parameter]
+ 3945 | md_analyze_marks(MD_CTX* ctx, const MD_LINE* lines, int n_lines,
+      |                               ~~~~~~~~~~~~~~~^~~~~
+/home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/3rdparty/md4c/md4c.c:3945:57: warning: unused parameter ‘n_lines’ [-Wunused-parameter]
+ 3945 | md_analyze_marks(MD_CTX* ctx, const MD_LINE* lines, int n_lines,
+      |                                                     ~~~~^~~~~~~
+/home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/3rdparty/md4c/md4c.c: At top level:
+/home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/3rdparty/md4c/md4c.c:5686:1: warning: missing initializer for field ‘beg’ of ‘MD_LINE_ANALYSIS’ {aka ‘const struct MD_LINE_ANALYSIS_tag’} [-Wmissing-field-initializers]
+ 5686 | static const MD_LINE_ANALYSIS md_dummy_blank_line = { MD_LINE_BLANK, 0 };
+      | ^~~~~~
+/home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/3rdparty/md4c/md4c.c:214:9: note: ‘beg’ declared here
+  214 |     OFF beg;
+      |         ^~~
+/home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/3rdparty/md4c/md4c.c: In function ‘md_enter_child_containers’:
+/home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/3rdparty/md4c/md4c.c:5534:33: warning: this statement may fall through [-Wimplicit-fallthrough=]
+ 5534 |                 is_ordered_list = TRUE;
+      |                                 ^
+/home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/3rdparty/md4c/md4c.c:5537:13: note: here
+ 5537 |             case _T('-'):
+      |             ^~~~
+/home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/3rdparty/md4c/md4c.c: In function ‘md_leave_child_containers’:
+/home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/3rdparty/md4c/md4c.c:5580:33: warning: this statement may fall through [-Wimplicit-fallthrough=]
+ 5580 |                 is_ordered_list = TRUE;
+      |                                 ^
+/home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/3rdparty/md4c/md4c.c:5583:13: note: here
+ 5583 |             case _T('-'):
+      |             ^~~~
+/home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/3rdparty/md4c/md4c.c: In function ‘md_rollback’:
+/home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/3rdparty/md4c/md4c.c:2668:19: warning: this statement may fall through [-Wimplicit-fallthrough=]
+ 2668 |                 if((mark_flags & MD_MARK_CLOSER)  &&  mark->prev > opener_index) {
+      |                   ^
+/home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/3rdparty/md4c/md4c.c:2675:13: note: here
+ 2675 |             default:
+      |             ^~~~~~~
+/home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/3rdparty/md4c/md4c.c: In function ‘md_process_inlines’:
+/home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/3rdparty/md4c/md4c.c:4153:23: warning: this statement may fall through [-Wimplicit-fallthrough=]
+ 4153 |                     if(ctx->parser.flags & MD_FLAG_UNDERLINE) {
+      |                       ^
+/home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/3rdparty/md4c/md4c.c:4169:17: note: here
+ 4169 |                 case '*':       /* Emphasis, strong emphasis. */
+      |                 ^~~~
+/home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/3rdparty/md4c/md4c.c:4257:23: warning: this statement may fall through [-Wimplicit-fallthrough=]
+ 4257 |                     if(!(mark->flags & MD_MARK_AUTOLINK)) {
+      |                       ^
+/home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/3rdparty/md4c/md4c.c:4267:17: note: here
+ 4267 |                 case '@':       /* Permissive e-mail autolink. */
+      |                 ^~~~
+/home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/network/access/qnetworkaccessdebugpipebackend_p.h:0: Note: No relevant classes found. No output generated.
+/home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/network/access/qnetworkaccessmanager.cpp: In member function ‘virtual QNetworkReply* QNetworkAccessManager::createRequest(QNetworkAccessManager::Operation, const QNetworkRequest&, QIODevice*)’:
+/home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/network/access/qnetworkaccessmanager.cpp:1397:43: warning: ‘QNetworkRequest::FollowRedirectsAttribute’ is deprecated: Use RedirectPolicyAttribute [-Wdeprecated-declarations]
+ 1397 |         && req.attribute(QNetworkRequest::FollowRedirectsAttribute).isNull()) {
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/include/QtNetwork/qnetworkrequest.h:1,
+                 from /home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/network/access/qnetworkaccessmanager.h:44,
+                 from /home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/network/access/qnetworkaccessmanager.cpp:42:
+/home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/include/QtNetwork/../../src/network/access/qnetworkrequest.h:97:9: note: declared here
+   97 |         FollowRedirectsAttribute Q_DECL_ENUMERATOR_DEPRECATED_X("Use RedirectPolicyAttribute"),
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/network/access/qnetworkaccessmanager.cpp:1397:43: warning: ‘QNetworkRequest::FollowRedirectsAttribute’ is deprecated: Use RedirectPolicyAttribute [-Wdeprecated-declarations]
+ 1397 |         && req.attribute(QNetworkRequest::FollowRedirectsAttribute).isNull()) {
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/include/QtNetwork/qnetworkrequest.h:1,
+                 from /home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/network/access/qnetworkaccessmanager.h:44,
+                 from /home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/network/access/qnetworkaccessmanager.cpp:42:
+/home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/include/QtNetwork/../../src/network/access/qnetworkrequest.h:97:9: note: declared here
+   97 |         FollowRedirectsAttribute Q_DECL_ENUMERATOR_DEPRECATED_X("Use RedirectPolicyAttribute"),
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/gui/text/qfontengine.cpp: In member function ‘bool QFontEngine::supportsScript(QChar::Script) const’:
+/home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/gui/text/qfontengine.cpp:377:35: warning: ‘void hb_ot_tags_from_script(hb_script_t, hb_tag_t*, hb_tag_t*)’ is deprecated: Use 'hb_ot_tags_from_script_and_language' instead [-Wdeprecated-declarations]
+  377 |             hb_ot_tags_from_script(hb_qt_script_to_script(script), &script_tag_1, &script_tag_2);
+      |             ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/letian/Letian_Xie/work/shondyGUI/cmake-build-release/vcpkg_installed/x64-linux/include/harfbuzz/hb-ot.h:34,
+                 from /home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/gui/text/qfontengine.cpp:58:
+/home/letian/Letian_Xie/work/shondyGUI/cmake-build-release/vcpkg_installed/x64-linux/include/harfbuzz/hb-ot-deprecated.h:88:1: note: declared here
+   88 | hb_ot_tags_from_script (hb_script_t  script,
+      | ^~~~~~~~~~~~~~~~~~~~~~
+/home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/gui/text/qharfbuzzng.cpp: In constructor ‘_hb_unicode_funcs_t::_hb_unicode_funcs_t()’:
+/home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/gui/text/qharfbuzzng.cpp:432:50: warning: ‘void hb_unicode_funcs_set_eastasian_width_func(hb_unicode_funcs_t*, hb_unicode_eastasian_width_func_t, void*, hb_destroy_func_t)’ is deprecated [-Wdeprecated-declarations]
+  432 |         hb_unicode_funcs_set_eastasian_width_func(funcs, _hb_qt_unicode_eastasian_width, NULL, NULL);
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/letian/Letian_Xie/work/shondyGUI/cmake-build-release/vcpkg_installed/x64-linux/include/harfbuzz/hb.h:34,
+                 from /home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/gui/text/qharfbuzzng_p.h:61,
+                 from /home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/gui/text/qharfbuzzng.cpp:41:
+/home/letian/Letian_Xie/work/shondyGUI/cmake-build-release/vcpkg_installed/x64-linux/include/harfbuzz/hb-deprecated.h:148:1: note: declared here
+  148 | hb_unicode_funcs_set_eastasian_width_func (hb_unicode_funcs_t *ufuncs,
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/gui/text/qharfbuzzng.cpp:438:58: warning: ‘void hb_unicode_funcs_set_decompose_compatibility_func(hb_unicode_funcs_t*, hb_unicode_decompose_compatibility_func_t, void*, hb_destroy_func_t)’ is deprecated [-Wdeprecated-declarations]
+  438 |         hb_unicode_funcs_set_decompose_compatibility_func(funcs, _hb_qt_unicode_decompose_compatibility, NULL, NULL);
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/letian/Letian_Xie/work/shondyGUI/cmake-build-release/vcpkg_installed/x64-linux/include/harfbuzz/hb.h:34,
+                 from /home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/gui/text/qharfbuzzng_p.h:61,
+                 from /home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/gui/text/qharfbuzzng.cpp:41:
+/home/letian/Letian_Xie/work/shondyGUI/cmake-build-release/vcpkg_installed/x64-linux/include/harfbuzz/hb-deprecated.h:216:1: note: declared here
+  216 | hb_unicode_funcs_set_decompose_compatibility_func (hb_unicode_funcs_t *ufuncs,
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+WARNING: Failure to find: /home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/x64-linux-dbg/src/widgets/qt5widgets_metatypes.json
+/home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/platformsupport/input/xkbcommon/qxkbcommon.cpp:276:16: error: ‘XKB_KEY_dead_lowline’ was not declared in this scope; did you mean ‘XKB_KEY_dead_belowring’?
+  276 |         Xkb2Qt<XKB_KEY_dead_lowline,            Qt::Key_Dead_Lowline>,
+      |                ^~~~~~~~~~~~~~~~~~~~
+      |                XKB_KEY_dead_belowring
+/home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/platformsupport/input/xkbcommon/qxkbcommon.cpp:276:69: error: template argument 1 is invalid
+  276 |         Xkb2Qt<XKB_KEY_dead_lowline,            Qt::Key_Dead_Lowline>,
+      |                                                                     ^
+/home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/platformsupport/input/xkbcommon/qxkbcommon.cpp:277:16: error: ‘XKB_KEY_dead_aboveverticalline’ was not declared in this scope; did you mean ‘XKB_KEY_dead_abovering’?
+  277 |         Xkb2Qt<XKB_KEY_dead_aboveverticalline,  Qt::Key_Dead_Aboveverticalline>,
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                XKB_KEY_dead_abovering
+/home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/platformsupport/input/xkbcommon/qxkbcommon.cpp:277:79: error: template argument 1 is invalid
+  277 |         Xkb2Qt<XKB_KEY_dead_aboveverticalline,  Qt::Key_Dead_Aboveverticalline>,
+      |                                                                               ^
+/home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/platformsupport/input/xkbcommon/qxkbcommon.cpp:278:16: error: ‘XKB_KEY_dead_belowverticalline’ was not declared in this scope; did you mean ‘XKB_KEY_dead_belowtilde’?
+  278 |         Xkb2Qt<XKB_KEY_dead_belowverticalline,  Qt::Key_Dead_Belowverticalline>,
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                XKB_KEY_dead_belowtilde
+/home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/platformsupport/input/xkbcommon/qxkbcommon.cpp:278:79: error: template argument 1 is invalid
+  278 |         Xkb2Qt<XKB_KEY_dead_belowverticalline,  Qt::Key_Dead_Belowverticalline>,
+      |                                                                               ^
+/home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/platformsupport/input/xkbcommon/qxkbcommon.cpp:279:16: error: ‘XKB_KEY_dead_longsolidusoverlay’ was not declared in this scope
+  279 |         Xkb2Qt<XKB_KEY_dead_longsolidusoverlay, Qt::Key_Dead_Longsolidusoverlay>,
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/platformsupport/input/xkbcommon/qxkbcommon.cpp:279:80: error: template argument 1 is invalid
+  279 |         Xkb2Qt<XKB_KEY_dead_longsolidusoverlay, Qt::Key_Dead_Longsolidusoverlay>,
+      |                                                                                ^
+/home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/platformsupport/input/xkbcommon/qxkbcommon.cpp:427:5: error: template argument 156 is invalid
+  427 |     >::Data{}
+      |     ^
+/home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/platformsupport/input/xkbcommon/qxkbcommon.cpp:427:5: error: template argument 157 is invalid
+/home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/platformsupport/input/xkbcommon/qxkbcommon.cpp:427:5: error: template argument 158 is invalid
+/home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/platformsupport/input/xkbcommon/qxkbcommon.cpp:427:5: error: template argument 159 is invalid
+make[4]: *** [Makefile:798: .obj/qxkbcommon.o] Error 1
+make[3]: *** [Makefile:48: sub-xkbcommon-make_first-ordered] Error 2
+make[2]: *** [Makefile:209: sub-input-make_first] Error 2
+make[2]: *** Waiting for unfinished jobs....
+make[1]: *** [Makefile:477: sub-platformsupport-make_first] Error 2
+make[1]: *** Waiting for unfinished jobs....
+In file included from /home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/include/QtCore/qdatastream.h:1,
+                 from /home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/include/QtGui/../../src/gui/painting/qregion.h:49,
+                 from /home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/include/QtGui/qregion.h:1,
+                 from /home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/include/QtGui/../../src/gui/painting/qmatrix.h:45,
+                 from /home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/include/QtGui/qmatrix.h:1,
+                 from /home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/include/QtGui/../../src/gui/painting/qtransform.h:43,
+                 from /home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/include/QtGui/qtransform.h:1,
+                 from /home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/include/QtGui/../../src/gui/image/qimage.h:48,
+                 from /home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/include/QtGui/qimage.h:1,
+                 from /home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/include/QtGui/../../src/gui/image/qpixmap.h:49,
+                 from /home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/include/QtGui/qpixmap.h:1,
+                 from /home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/include/QtGui/../../src/gui/image/qbitmap.h:44,
+                 from /home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/include/QtGui/qbitmap.h:1,
+                 from /home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/widgets/kernel/../../gui/kernel/qt_gui_pch.h:53,
+                 from /home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/widgets/kernel/qt_widgets_pch.h:48:
+/home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/include/QtCore/../../src/corelib/serialization/qdatastream.h: In instantiation of ‘QDataStream& QtPrivate::writeAssociativeContainer(QDataStream&, const Container&) [with Container = QHash<int, int>]’:
+/home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/include/QtCore/../../src/corelib/serialization/qdatastream.h:467:48:   required from ‘QDataStream& operator<<(QDataStream&, const QHash<K, V>&) [with Key = int; T = int]’
+/home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/widgets/itemviews/qheaderview.cpp:3970:12:   required from here
+/home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/include/QtCore/../../src/corelib/serialization/qdatastream.h:340:9: warning: ‘QHash<K, V>::const_iterator& QHash<K, V>::const_iterator::operator--() [with Key = int; T = int]’ is deprecated [-Wdeprecated-declarations]
+  340 |         --it;
+      |         ^~~~
+In file included from /home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/include/QtCore/qhash.h:1,
+                 from /home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/include/QtCore/../../src/corelib/kernel/qvariant.h:48,
+                 from /home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/include/QtCore/qvariant.h:1,
+                 from /home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/widgets/kernel/../../gui/kernel/../../corelib/global/qt_pch.h:70,
+                 from /home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/widgets/kernel/../../gui/kernel/qt_gui_pch.h:48,
+                 from /home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/src/widgets/kernel/qt_widgets_pch.h:48:
+/home/letian/Letian_Xie/packages/vcpkg_GUI/vcpkg/buildtrees/qt5-base/src/5.15.10-6bae14788b.clean/include/QtCore/../../src/corelib/tools/qhash.h:435:59: note: declared here
+  435 |         inline QT_DEPRECATED_VERSION_5_15 const_iterator &operator--()
+      |                                                           ^~~~~~~~
+make: *** [Makefile:51: sub-src-make_first] Error 2

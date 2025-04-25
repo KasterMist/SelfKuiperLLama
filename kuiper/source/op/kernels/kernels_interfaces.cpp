@@ -29,6 +29,15 @@ AddKernel get_add_kernel(base::DeviceType device_type) {
   }
 }
 
+AddKernel get_add_kernel_fp32x4(base::DeviceType device_type){
+  if(device_type == base::DeviceType::kDeviceCUDA){
+    return add_kernel_cu_fp32x4;
+  } else {
+    LOG(FATAL) << "Unknown device type for get a add kernel.";
+    return nullptr;
+  }
+}
+
 EmbeddingKernel get_emb_kernel(base::DeviceType device_type) {
   if (device_type == base::DeviceType::kDeviceCPU) {
     return emb_kernel_normal;

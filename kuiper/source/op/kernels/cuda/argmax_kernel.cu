@@ -46,17 +46,17 @@ __forceinline__ __device__ void block_reduce_argmax(float& val, size_t& ptr, flo
   }
 }
 
-__global__ void argmax_kernel_fp32(const float* input_ptr, size_t size, size_t* output_idx) {
-  __shared__ size_t shared_max_ptr[32];
+__global__ void argmax_kernel_fp32(const float* input_ptr, size_t size, size_t* output_idx) { 
+  __shared__ size_t shared_max_ptr[32]; // 假设一个block最多有32个warp, 所以创建size为32的memory，每个存储一个warp中获取的最大值
   __shared__ float shared_max_value[32];
-  uint32_t tid = threadIdx.x;
+  uint32_t tid = threadIdx.x; // 在这个特殊案例下，GridDim为1，所以只用了threadIdx.x
   if (tid >= size) {
     return;
   }
 
   size_t max_index = threadIdx.x;
   float max_value = input_ptr[max_index];
-  for (size_t i = tid; i < size; i += blockDim.x) {
+  for (size_t i = tid; i < size; i += blockDim.x) { // stride为一个blockDim，每个thread负责找自己的部分的最大值的index
     if (input_ptr[i] > max_value) {
       max_index = i;
       max_value = input_ptr[i];

@@ -3,6 +3,7 @@
 #include <memory>
 #include "base/alloc.h"
 namespace base {
+// Buffer继承NoCopyable是为了限制Buffer对象的拷贝行为，防止潜在的错误和确保资源管理的正确性。
 class Buffer : public NoCopyable, std::enable_shared_from_this<Buffer> {
  private:
   size_t byte_size_ = 0;

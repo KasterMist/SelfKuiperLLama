@@ -5,7 +5,7 @@
 namespace kernel {
 template <int THREAD_PER_BLOCK, int ROW_PER_BLOCK>
 __global__ void matmul_kernel_cu_fp32(const float* input, const float* weight, float* output, int M,
-                                      int K) {
+                                      int K) {  // M: col num, K: row num, weight已经被转置处理
   __shared__ float sdata[THREAD_PER_BLOCK];
   unsigned int tid = threadIdx.x;
 
@@ -16,18 +16,18 @@ __global__ void matmul_kernel_cu_fp32(const float* input, const float* weight, f
   }
 
   constexpr int pack_size = 4;
-  const int pack_num = M / pack_size;
-  const int pack_off = pack_size * pack_num;
+  const int pack_num = M / pack_size;  // 使用float4后，每行pack的数量
+  const int pack_off = pack_size * pack_num; // 处理最后一部分不能被4整除的块(不能进行float4转换，所以需要单独计算)
 
 #pragma unroll
-  for (int p = start_row; p < end_row; ++p) {
+  for (int p = start_row; p < end_row; ++p) { // 每个thread处理当前block负责的所有行中的部分数据计算
     sdata[tid] = 0;
     int row_offset = p * M;
     float4* input_float4_ptr = (float4*)input;
     float4* weight_float4_ptr = (float4*)(weight + row_offset);
 
 #pragma unroll
-    for (int i = tid; i < pack_num; i += blockDim.x) {
+    for (int i = tid; i < pack_num; i += blockDim.x) { // 每个thread处理当前处理行的对应位置(通过当前block的thread数量进行计算偏移量)
       float4 input_float4 = *(input_float4_ptr + i);
       float4 weight_float4 = *(weight_float4_ptr + i);
       float part_sum = input_float4.x * weight_float4.x + input_float4.y * weight_float4.y +

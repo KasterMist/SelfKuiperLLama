@@ -20,6 +20,7 @@ TEST(test_buffer, use_external) {
   delete[] ptr;
 }
 
+// test cu_buffer copy from cpu_buffer
 TEST(test_buffer, cuda_memcpy1) {
   using namespace base;
   auto alloc = base::CPUDeviceAllocatorFactory::get_instance();
@@ -48,6 +49,7 @@ TEST(test_buffer, cuda_memcpy1) {
   delete[] ptr2;
 }
 
+// same as cuda_memcpy1
 TEST(test_buffer, cuda_memcpy2) {
   using namespace base;
   auto alloc = base::CPUDeviceAllocatorFactory::get_instance();
@@ -76,6 +78,7 @@ TEST(test_buffer, cuda_memcpy2) {
   delete[] ptr2;
 }
 
+// cu_buffer1 copy from cu_buffer2
 TEST(test_buffer, cuda_memcpy3) {
   using namespace base;
   auto alloc = base::CPUDeviceAllocatorFactory::get_instance();
@@ -100,6 +103,7 @@ TEST(test_buffer, cuda_memcpy3) {
   delete[] ptr2;
 }
 
+// cu_buffer2 (alloc is CPU) copy from cu_buffer1
 TEST(test_buffer, cuda_memcpy4) {
   using namespace base;
   auto alloc = base::CPUDeviceAllocatorFactory::get_instance();
